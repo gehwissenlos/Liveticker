@@ -1,0 +1,123 @@
+body, input, textarea {
+	font-family: 'Droid Sans', sans-serif;
+	background: url('img/bg-pattern-light.gif');
+	margin: 0;
+}
+
+#main {
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+img {
+	border: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main a {
+    color: #000;
+	text-decoration: underline;
+}
+
+form, fieldset, input , textarea{
+  margin: 0;
+  padding: 0;
+  border: none;
+  }
+
+input, textarea, #response {
+	width: auto;
+	border:solid 0.063em #444;
+    font-size: 1.2em;
+    padding: 0.438em 0.500em 0.438em 30px;
+    color:#333;
+	margin-bottom: 0.375em;
+}
+
+#response {
+	width: 50%;
+}
+
+input#password {
+	background: url('img/keys.png') no-repeat 4px 5px;
+}
+
+input#eventid {
+	background: url('img/link.png') no-repeat 4px 5px;
+}
+
+textarea#message {
+	background: url('img/notes.png') no-repeat 4px 5px;
+}
+
+input#name {
+	background: url('img/chat.png') no-repeat 4px 8px;
+}
+
+input#ajax_butt, input#button {
+	background: url('img/ok.png') no-repeat 4px 8px;
+	width: 7em;
+}
+
+input#ajax_butt {
+	float:left;
+}
+
+#header {
+	font-size: 1.3em;
+	padding: 0.208em 0.667em;
+}
+
+#footer {
+	background-color: #000;
+	opacity: 0.75;
+	color: #fff;
+	padding: 0.25em 1em;
+	margin-top: 1em;
+}
+
+/* Responsive */
+
+@media (min-width: 1060px) {
+	input {
+		width: 250px;
+	}
+	
+	input#eventid {
+		margin-right: 10px;
+	}
+	
+	textarea#message {
+		width: 555px;
+	}
+	
+	input#ajax_butt, input#button {
+		width: 140px;
+	}
+	
+	#response {
+		width: 405px;
+		margin-left: 150px;
+	}
+	
+}
+
+@media (max-width: 1060px) {
+	input, textarea#message, #response {
+		width: 90%;
+	}
+	
+	input#ajax_butt, input#button {
+		width: 7em;
+		float: none;
+	}
+	
+	#header, #main, #footer {
+		padding: 5px 5%;
+	}
+	
+}

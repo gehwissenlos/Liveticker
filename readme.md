@@ -12,12 +12,12 @@ Liveticker ist ein auf PHP und MySQL basierender Liveticker, welchen ich vor Jah
 ### Datenbank
 Es werden 2 Tabellen benötigt.
 
-#### lt-event
+#### lt_event
 	id	int(250)
 	password	text
     name	char(100)
     
-#### lt-event
+#### lt_entry
 	id	int(250)
 	time	timestamp		on update CURRENT_TIMESTAMP
 	text	varchar(1000)
